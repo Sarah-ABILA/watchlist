@@ -1,0 +1,7 @@
+<%= simple_form_for movie do |f| %>
+  <%= f.input :title, label: "Titre" %>
+  <%= f.input :genre, label: "Genre" %>
+  <%= f.input :description, label: "Description" %>
+  <%= f.input :jacket, as: :file, label: "Affiche du film" %>  
+  <%= f.submit "Enregistrer", class: "btn btn-primary mt-2" %>
+<% end %>

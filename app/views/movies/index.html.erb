@@ -1,0 +1,20 @@
+
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>🎬 Films</h1>
+    <%= link_to "Ajouter un film", new_movie_path, class: "btn btn-primary" %>
+  </div>
+
+  <% @movies.each do |movie| %>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title"><%= movie.title %></h5>
+        <p class="card-text text-muted"><%= movie.genre %></p>
+        <p class="card-text"><%= movie.description %></p>
+        <%= link_to "Voir", movie, class: "btn btn-sm btn-outline-primary" %>
+        <%= link_to "Modifier", edit_movie_path(movie), class: "btn btn-sm btn-outline-secondary" %>
+        <%= link_to "Supprimer", movie, method: :delete, data: { turbo_method: :delete, turbo_confirm: "Sûre ?" }, class: "btn btn-sm btn-outline-danger" %>
+      </div>
+    </div>
+  <% end %>
+</div>
