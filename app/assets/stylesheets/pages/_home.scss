@@ -1,1 +1,56 @@
 // Specific CSS for your home-page
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 56px);
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.25);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.85);
+    margin-top: 0.5rem;
+  }
+}
+
+
+
+.movie-card {
+  border: none !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 20px;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-body {
+    padding: 24px;
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+}
+
+body {
+  background-color: #f0f4ff !important;
+}
