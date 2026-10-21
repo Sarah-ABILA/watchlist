@@ -97,4 +97,4 @@ Le `Dockerfile` est multi-stage et optimisé pour la production (Thruster en fa�
 
 ---
 
-_Sarah Abila — Hyères (83) — [LinkedIn](https://linkedin.com/in/sarah-abila-278041378) — [GitHub](https://github.com/Sarah-ABILA)_
+_Sarah Abila — Hyères (83) — [LinkedIn](https://linkedin.com/in/sarah-abila) — [GitHub](https://github.com/Sarah-ABILA)_
