@@ -3,6 +3,10 @@
   <h1><%= @movie.title %></h1>
 <% if @movie.jacket.attached? %>
   <%= image_tag @movie.jacket, style: "width: 200px; border-radius: 8px;" %>
+<% elsif @movie.poster_url.present? %>
+  <%= image_tag @movie.poster_url, style: "width: 200px; border-radius: 8px;" %>
+<% else %>
+  <p>Pas d'image disponible</p>
 <% end %>
 
   <p class="text-muted"><%= @movie.genre %></p>
